@@ -1,0 +1,25 @@
+
+{% extends 'core/base.html'%}
+
+{%block title%} Acerca de {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/yare.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Yaretzy Araneth Encinia Montoya</h2>   
+        <p></p>
+        <p>Soy Yaretzy, estudiante de Biotecnología Genómica en la UANL. Mi pasión por la genómica me ha llevado a adquirir un amplio conocimiento en el campo. Soy una persona responsable y trabajadora que valora la ética profesional. Mi objetivo es aplicar mis habilidades para contribuir al avance de la biotecnología genómica y hacer una diferencia en el mundo real.</p>
+    </div>
+</div>
+{% endblock %}
+
